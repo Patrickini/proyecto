@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "proyecto", "proyecto\proyecto.vcxproj", "{D92217CE-AB6C-48E9-A854-2C17C66BAFA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0D79656B-39A6-4F44-B1D0-08AF65F0C41A}"
+	ProjectSection(SolutionItems) = preProject
+		vertex.ver = vertex.ver
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "theCherno", "theCherno\theCherno.vcxproj", "{795272C0-CD13-4A24-BD6F-DF60B6DEBEFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D92217CE-AB6C-48E9-A854-2C17C66BAFA1}.Debug|x64.ActiveCfg = Debug|x64
+		{D92217CE-AB6C-48E9-A854-2C17C66BAFA1}.Debug|x64.Build.0 = Debug|x64
+		{D92217CE-AB6C-48E9-A854-2C17C66BAFA1}.Debug|x86.ActiveCfg = Debug|Win32
+		{D92217CE-AB6C-48E9-A854-2C17C66BAFA1}.Debug|x86.Build.0 = Debug|Win32
+		{D92217CE-AB6C-48E9-A854-2C17C66BAFA1}.Release|x64.ActiveCfg = Release|x64
+		{D92217CE-AB6C-48E9-A854-2C17C66BAFA1}.Release|x64.Build.0 = Release|x64
+		{D92217CE-AB6C-48E9-A854-2C17C66BAFA1}.Release|x86.ActiveCfg = Release|Win32
+		{D92217CE-AB6C-48E9-A854-2C17C66BAFA1}.Release|x86.Build.0 = Release|Win32
+		{795272C0-CD13-4A24-BD6F-DF60B6DEBEFC}.Debug|x64.ActiveCfg = Debug|x64
+		{795272C0-CD13-4A24-BD6F-DF60B6DEBEFC}.Debug|x64.Build.0 = Debug|x64
+		{795272C0-CD13-4A24-BD6F-DF60B6DEBEFC}.Debug|x86.ActiveCfg = Debug|Win32
+		{795272C0-CD13-4A24-BD6F-DF60B6DEBEFC}.Debug|x86.Build.0 = Debug|Win32
+		{795272C0-CD13-4A24-BD6F-DF60B6DEBEFC}.Release|x64.ActiveCfg = Release|x64
+		{795272C0-CD13-4A24-BD6F-DF60B6DEBEFC}.Release|x64.Build.0 = Release|x64
+		{795272C0-CD13-4A24-BD6F-DF60B6DEBEFC}.Release|x86.ActiveCfg = Release|Win32
+		{795272C0-CD13-4A24-BD6F-DF60B6DEBEFC}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
