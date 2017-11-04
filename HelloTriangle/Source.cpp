@@ -4,23 +4,9 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <time.h>
-/*#define GL_LOG_FILE "gl.log"
 
-//#include "VertexShader.h"
-//#include "FragmentShader.h"
+#include "Setup.h"
 
-bool restart_gl_log() {
-	FILE* file = fopen(GL_LOG_FILE, "w");
-	if (!file) {
-		fprintf(stderr, "ERROR: nose pudor abrir GL_LOG_FILE %s for writing\n", GL_LOG_FILE);
-		return false;
-	}
-	time_t now = time(NULL);
-	char* date = ctime(&now);
-	fprintf(file, "GL_LOG_FILE log. local time %s\n", date);
-	fclose(file);
-	return true;
-}*/
 
 int main() {
 	if (!glfwInit()) {
@@ -38,6 +24,7 @@ int main() {
 	glewExperimental = GL_TRUE;
 	glewInit();
 
+
 	const GLubyte* renderer = glGetString(GL_RENDERER);
 
 	const GLubyte* version = glGetString(GL_RENDERER);
@@ -48,10 +35,17 @@ int main() {
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LESS);
 
+	setup();
+
 	GLfloat points[] = {
-		0.0f, 0.5f, 0.0f,
-		0.5f,-0.5f, 0.0f,
-		-0.5f, -0.5f, 0.0f
+		 0.5f, 0.5f, 0.0f,
+		-0.5f,-0.5f, 0.0f,
+		-0.5f, 0.5f, 0.0f
+	};
+	GLfloat points2[] = {
+		-0.5f, 0.5f, 0.0f,
+		-0.5f,-0.5f, 0.0f,
+		-0.5f, 0.5f, 0.0f
 	};
 
 	GLuint vbo = 0;
