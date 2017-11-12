@@ -5,7 +5,7 @@
 #include <stdarg.h>
 #include <time.h>
 
-
+//lol
 
 int main() {
 	if (!glfwInit()) {
