@@ -6,7 +6,7 @@
 #include <time.h>
 #include "Shader_Loader.h"
 
-//lol
+
 
 int main() {
 	if (!glfwInit()) {
