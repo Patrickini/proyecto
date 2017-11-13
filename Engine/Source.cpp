@@ -4,8 +4,9 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <time.h>
+#include "Shader_Loader.h"
 
-
+//lol
 
 int main() {
 	if (!glfwInit()) {
@@ -88,6 +89,7 @@ int main() {
 	while (!glfwWindowShouldClose(window)) {
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		glUseProgram(shader_programme);
+		// glUseProgram(program);
 		glBindVertexArray(vao);
 		glDrawArrays(GL_TRIANGLES, 0, 3);
 		glfwPollEvents();
