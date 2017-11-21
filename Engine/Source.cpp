@@ -1,12 +1,23 @@
-#include<iostream>
-#include<GL\glew.h>
-#include<GLFW\glfw3.h>
+#include <iostream>
+#include <GL\glew.h>
+#include <GLFW\glfw3.h>
+#include <glm.hpp>
 #include <stdio.h>
 #include <stdarg.h>
 #include <time.h>
 #include "Shader_Loader.h"
 
+GLuint program;
 
+void renderScene(void) {
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	glUseProgram(program);
+
+}
+void Init(void) {
+	glEnable(GL_DEPTH_TEST);
+	glDepthFunc(GL_LESS);
+}
 
 int main() {
 	if (!glfwInit()) {
@@ -32,8 +43,8 @@ int main() {
 	printf("Renderer: %s\n", renderer);
 	printf("Version: %s\n", version);
 
-	glEnable(GL_DEPTH_TEST);
-	glDepthFunc(GL_LESS);
+	/*[anton]glEnable(GL_DEPTH_TEST);
+	glDepthFunc(GL_LESS);*/
 
 
 	GLfloat points[] = {
@@ -87,8 +98,8 @@ int main() {
 	glLinkProgram(shader_programme);
 
 	while (!glfwWindowShouldClose(window)) {
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		glUseProgram(shader_programme);
+		//[anton]glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+		//[anton]glUseProgram(shader_programme);
 		// glUseProgram(program);
 		glBindVertexArray(vao);
 		glDrawArrays(GL_TRIANGLES, 0, 3);

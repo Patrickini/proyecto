@@ -19,6 +19,9 @@
     <Filter Include="Shaders">
       <UniqueIdentifier>{5f947d6b-7cea-4e37-9420-d1e797cbd89a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="NewFilter1">
+      <UniqueIdentifier>{68b060f7-9000-4b51-bded-c78d28e6a0cb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -30,6 +33,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader_Loader.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexFormat.h">
       <Filter>Core</Filter>
     </ClInclude>
   </ItemGroup>

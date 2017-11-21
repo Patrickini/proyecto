@@ -75,7 +75,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)/../Libs/GLEW/include;$(SolutionDir)/../Libs/GLFW/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/../Libs/GLM/glm;$(SolutionDir)/../Libs/GLEW/include;$(SolutionDir)/../Libs/GLFW/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)/../Libs/GLEW/lib/Release/Win32;$(SolutionDir)/../Libs/GLFW/lib-vc2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -96,7 +96,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)/../Libs/GLEW/include;$(SolutionDir)/../Libs/GLFW/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/../Libs/GLM/glm;$(SolutionDir)/../Libs/GLEW/include;$(SolutionDir)/../Libs/GLFW/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -124,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader_Loader.h" />
+    <ClInclude Include="VertexFormat.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Fragment_Shader.glsl" />
