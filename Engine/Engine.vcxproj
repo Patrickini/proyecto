@@ -119,10 +119,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GameModels.cpp" />
     <ClCompile Include="Shader_Loader.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GameModels.h" />
     <ClInclude Include="Shader_Loader.h" />
     <ClInclude Include="VertexFormat.h" />
   </ItemGroup>

@@ -30,12 +30,18 @@
     <ClCompile Include="Shader_Loader.cpp">
       <Filter>Core</Filter>
     </ClCompile>
+    <ClCompile Include="GameModels.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader_Loader.h">
       <Filter>Core</Filter>
     </ClInclude>
     <ClInclude Include="VertexFormat.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GameModels.h">
       <Filter>Core</Filter>
     </ClInclude>
   </ItemGroup>
