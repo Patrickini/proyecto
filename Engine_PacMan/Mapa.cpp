@@ -30,7 +30,9 @@ void Mapa::cargarDesdeMapa(std::string mapName)
 }
 
 void Mapa::drawMap()
-{
+{	
+	((ai_Pato*)pacman->getMaterial())->setMaterialParam(pacman->doTransformations(), glm::vec4(0.0f, 1.0f, 1.0f, 1.0f));
+	pacman->draw();
 	((ai_Pato*)pacman->getMaterial())->setMaterialParam(pacman->doTransformations(), glm::vec4(0.0f, 1.0f, 1.0f, 1.0f));
 	pacman->draw();
 	((ai_Pato*)suelitoLoco.getMaterial())->setMaterialParam(pacman->doTransformations(), glm::vec4(0.0f, 1.0f, 1.0f, 1.0f));
