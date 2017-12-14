@@ -18,6 +18,7 @@ public:
 	static void App(int height, int width, char* name);
 	static int getWidth() { return WIDTH; }
 	static int getHeight() { return HEIGHT; }
+	static GLFWwindow* getWindow() { return window; }
 	
 };
 

@@ -54,6 +54,9 @@
     <None Include="shader.f" />
     <None Include="shader.v" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="map.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{878F1E04-9167-4775-B2D1-E15DADBC3CFA}</ProjectGuid>

@@ -1,8 +1,13 @@
 #include "Engine.h"
+#include <chrono>
+#include <thread>
+
+using namespace std::chrono_literals;
 
 GLFWwindow *Engine::window;
 int Engine::HEIGHT;
 int Engine::WIDTH;
+Camera** Engine::mainCamera;
 Engine::Engine()
 {
 }
@@ -21,7 +26,7 @@ void Engine::App(int height, int width, char* name)
 	if (!glfwInit()) {
 		fprintf(stderr, "no se pudo inicializar GLFW3\n");
 	}
-	window = glfwCreateWindow(height, width, name, NULL, NULL);
+	window = glfwCreateWindow(width, height, name, NULL, NULL);
 	if (!window) {
 		fprintf(stderr, "no se pudo abrir ventana\n");
 		glfwTerminate();
@@ -50,6 +55,7 @@ void Engine::App(int height, int width, char* name)
 		
 		SceneManager::GetInstance()->execution();
 		glfwSwapBuffers(window);
+		std::this_thread::sleep_for(32ms);
 	}
 
 }

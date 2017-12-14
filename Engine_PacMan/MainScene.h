@@ -7,19 +7,24 @@
 class MainScene : public Scene
 {
 public:
-	//glm::vec3 eye = glm::vec3 (0,0,0);
-	//glm::vec3 target = glm::vec3 (0,0,1);
-	//glm::mat4  camera = lookAt(eye, target, glm::vec3(0.0f, 1.0f, 1.0f));
-
+	
+	glm::vec3 eye = glm::vec3 (0,0,0);
+	glm::vec3 target = glm::vec3 (0,0,1);
+	glm::mat4  camera = lookAt(eye, target, glm::vec3(0.0f, 1.0f, 0.0f));
+	
 	MainScene();
 	void start() final;
 	void update() final;
 	void draw() final;
 	void destroyScene() final;
-	//Objeto *triangle;
-	//
-	//Shader *frag, *vert;
-	//ShaderProgram *prog;
+	Objeto *triangle;
+	
+	Objeto *PacObj;
+	
+	Shader *frag, *vert;
+	
+	ShaderProgram *prog;
+	ShaderProgram *prog2;
 	Mapa map;
 	~MainScene();
 	

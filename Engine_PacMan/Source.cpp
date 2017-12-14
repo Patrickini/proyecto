@@ -100,5 +100,5 @@ int main() {
 	glfwTerminate();
 	return 0;*/
 
-	Engine::App(1280,720,"Holi");
+	Engine::App(720,1280,"Holi");
 }

@@ -4,8 +4,8 @@
 #include "MeshOb.h"
 #include "ai_Pato.h"
 #include <gtc\matrix_transform.hpp>
+#include "Camera.h"
 #include "Objeto.h"
-//#include "Camera.h"
 enum Tiles{ empty = 0, wall, pellet, _pellet, pac, fantasmon};
 class Mapa
 {

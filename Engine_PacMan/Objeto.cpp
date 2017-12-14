@@ -31,18 +31,18 @@ void Objeto::setMaterial(MeshMaterial * mat)
 
 void Objeto::translate(glm::vec3 trans)
 {
-	position += glm::translate(position, trans);
+	position = glm::translate(position, trans);
 }
 
 void Objeto::rotate(float angulo, glm::vec3 eje)
 {
 	float angulo_t = glm::radians(angulo);
-	rotation += glm::rotate(rotation, angulo_t, eje);
+	rotation = glm::rotate(rotation, angulo_t, eje);
 }
 
 void Objeto::setScale(glm::vec3 scl)
 {
-	scale += glm::scale(scale, scl);
+	scale = glm::scale(scale, scl);
 }
 
 void Objeto::setActive(bool isAct)

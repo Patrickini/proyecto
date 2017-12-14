@@ -13,7 +13,7 @@ private:
 
 	
 public:
-	void setMaterialParam(glm::mat4 transform, glm::vec4 color);
+	void setMaterialParam(int argc, ...) override;
 	void getMaterialParam() override;
 	ai_Pato();
 	~ai_Pato();
